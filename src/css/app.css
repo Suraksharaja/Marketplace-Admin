@@ -1,0 +1,448 @@
+
+html {
+	font-size: 16px;
+}
+
+
+body {
+	background-color: #ececec;
+	font-family: 'Roboto', "Helvetica Neue", Arial, sans-serif;
+}
+.field{
+  border: none;
+}
+.user {
+  font-size: 11px;
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 7%;
+  border: none; /* <-- This thing here */
+  border:solid 1px #ccc;
+  border-radius: 5px;
+}
+.loginbtn {
+margin-top: 7%;
+float: right;
+}
+.SignInStyleWrapper {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  background: url("/sign.jpg") no-repeat center center;
+  background-size: cover;
+}
+.fgtpwd {
+
+  margin-top: 12%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.SignInStyleWrapper:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left:inherit;
+  right:inherit;
+}
+.isoForgotPass {
+  font-size: 12px;
+  color: blue;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.isoForgotPass:hover {
+  color: blue;
+}
+
+.isoOtherLogin {
+  padding-top: 40px;
+  margin-top: 35px;
+  border-top: 1px dashed gray;
+  }
+
+  .isoOtherLogin:a {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .isoOtherLogin:last-child {
+    margin-bottom: 0;
+  }
+  .isoHelperWrapper {
+    margin-top: 35px;
+    flex-direction: column;
+  }
+
+  .isoHelperText {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: gray;
+    padding-left: inherit;
+    padding-right: inherit;
+    margin: 15px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+    .isoHelperText:before {
+      content: '*';
+      color: white;
+      padding-right: 3px;
+      font-size: 14px;
+      line-height: 1;
+      position: absolute;
+      top: 2px;
+      left: inherit;
+      right: inherit;
+    }
+    .isoSignInForm {
+      width: 100%;
+      display: flex;
+      flex-shrink: 0;
+      flex-direction: column;
+
+      
+    }
+    .isoInputWrapper {
+      margin-bottom: 15px;
+
+      }
+      .isoInputWrapper:last-of-type {
+        margin-bottom: 0;
+      }
+      .isoLeftRightComponent {
+       
+          width: 100%;
+
+        
+      }
+
+      .isoLeftRightComponent:first-child {
+        margin-right: 20px;
+        margin-left:inherit;
+      }
+        .isoLogoWrapper {
+          width: 100%;
+          display: flex;
+          margin-bottom: 50px;
+          justify-content: center;
+          flex-shrink: 0;
+    
+        }
+    
+        .isoLogoWrapper:a {
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 1;
+          text-transform: uppercase;
+          color: red
+        }
+
+        .isoLoginContent {
+          min-height: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 70px 50px;
+          position: relative;
+          background-color: #ffffff;
+        }
+        
+        @media only screen and (max-width: 767px) {
+          width: 100%;
+          padding: 70px 20px;
+        }
+        .isoLoginContentWrapper {
+          width: 500px;
+          height: 100%;
+          z-index: 10;
+          overflow-y: auto;
+          position: relative;
+        }
+        input ::-webkit-input-placeholder {
+          color: gray;
+        }
+
+        .bt {
+          float: right;
+          background-color: dodgerblue;
+        }
+        .curve {
+          background: #0069eb;
+          color: #fff;
+          border-radius: 6px;
+          border: none;
+          font-size: 16px;
+          padding: 9px 30px;
+          text-decoration: none; }
+          
+    .ForgotPasswordStyleWrapper{
+      width: 100%;
+      min-height: 100vh;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      background: url("/image3.jpg") no-repeat center center;
+      background-size: cover;
+    }
+    .ForgotPasswordStyleWrapper:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: inherit;
+      right: inherit;
+    }
+
+  .isoFormContentWrapper {
+    width: 500px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 10;
+    position: relative;
+  }
+  .isoFormContent {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 50px;
+    position: relative;
+    background-color: #ffffff;
+  }
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      padding: 70px 20px;
+    }
+
+    .isoLogoWrapper {
+      width: 100%;
+      display: flex;
+      margin-bottom: 70px;
+      justify-content: center;
+    }
+    .isoLogoWrapper:a {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1;
+      text-transform: uppercase;
+      color: red;
+    }
+
+    .isoFormHeadText {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      justify-content: center;
+
+    }
+
+    .isoFormHeadText:h3 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 0 7px;
+      color: blue;
+    }
+
+    .isoFormHeadText:p {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0;
+      color: blue;
+    }
+    isoForgotPassForm {
+      width: 100%;
+      display: flex;
+      flex-shrink: 0;
+      flex-direction: column;
+    }
+      .isoInputWrapper {
+        margin-bottom: 10px;
+      }
+        .isoInputWrapper:last-child {
+          margin-bottom: 0;
+        }
+        .pwdbutton {
+          height: 42px;
+          width: 110%;
+          font-weight: 500;
+          font-size: 13px;
+          background: #0069eb;
+          color: #fff;
+          border-radius: 6px;
+          border: none;
+          font-size: 16px;
+          padding: 9px 30px;
+          text-decoration: none; }
+        
+          .isomorphicTopbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 35px 365px;
+            z-index: 1000;
+           
+            }
+            @media only screen and (max-width: 767px) {
+              padding: 0px 15px 0px 260px !important;
+            }
+           
+            .isoLeft {
+              display: flex;
+              align-items: center;
+            }
+              @media only screen and (max-width: 767px) {
+                margin: 0 20px 0 0;
+              }
+        
+              .triggerBtn {
+                width: 24px;
+                height: 100%;
+                display: -webkit-inline-flex;
+                display: -ms-inline-flex;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+                border: 0;
+                outline: 0;
+                position: relative;
+                cursor: pointer;
+              }
+          
+              
+              .triggerBtn:before {
+                content: '\f20e';
+                font-family: 'Ionicons';
+                font-size: 26px;
+                color: inherit;
+                line-height: 0;
+                position: absolute;
+              }
+
+
+
+              .isoRight {
+                display: flex;
+                align-items: center;
+              }
+                li {
+                  margin-left: 0;
+                  margin-right: 0;
+                  cursor: pointer;
+                  line-height: normal;
+                  position: relative;
+                  display: inline-block;
+                }
+                  @media only screen and (max-width: 360px) {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                  }
+          
+                  li:last-child {
+                    margin: 0;
+                  }
+          
+                  i {
+                    font-size: 24px;
+                    color: red;
+                    line-height: 1;
+                  }
+          
+                  .isoIconWrapper {
+                    position: relative;
+                    line-height: normal;
+                  }
+                    span {
+                      font-size: 12px;
+                      color: #fff;
+                      background-color: red;
+                      width: 20px;
+                      height: 20px;
+                      display: -webkit-inline-flex;
+                      display: -ms-inline-flex;
+                      display: inline-flex;
+                      align-items: center;
+                      justify-content: center;
+                      text-align: center;
+                      line-height: 20px;
+                      position: absolute;
+                      top: -8px;
+                      left: 10px;
+                    }
+                  
+          
+                isoMail {
+                   
+                        background-color: blue;
+        
+                  }
+          
+                  isoNotify {
+                   
+                        background-color: blue;
+            
+                  }
+          
+                  isoMsg {
+               
+                        background-color: green;
+                
+                  }
+          
+                  .isoCart {
+          
+                        background-color: red;
+                  }
+          
+                  .isoUser {
+                    
+                      width: 40px;
+                      height: 40px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      position: relative;
+                      background-color: red;
+                  }
+                      img {
+                        height: 100%;
+                        object-fit: cover;
+                      }
+          
+                      .userActivity {
+                        width: 10px;
+                        height: 10px;
+                        display: block;
+                        background-color: red;
+                        position: absolute;
+                        bottom: 0;
+                        right: 3px;
+                        border: 1px solid #ffffff;
+                   
+            }
+        footer {
+          background-color: #ffffff;
+          text-align: center;
+          border-top: 1px solid #ededed;
+        }
